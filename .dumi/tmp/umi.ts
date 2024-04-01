@@ -4,7 +4,7 @@
 import './core/polyfill';
 import '/Users/xiaozisong/Desktop/opensource/amenity-ui/.dumi/global.css';
 import { getPluginManager as getDumiPluginManager } from './core/plugin';
-import { setPluginManager as setDumiPluginManager } from '/Users/xiaozisong/Desktop/opensource/amenity-ui/node_modules/.pnpm/dumi@2.3.0-beta.8_glxuhseaxnynb3wl34vdbiopru/node_modules/dumi/dist/client/theme-api/utils.js';
+import { setPluginManager as setDumiPluginManager } from '/Users/xiaozisong/Desktop/opensource/amenity-ui/node_modules/.pnpm/dumi@2.3.0-beta.8_borxkdqnsj666zm5xafhs5jqdq/node_modules/dumi/dist/client/theme-api/utils.js';
 import { renderClient } from '/Users/xiaozisong/Desktop/opensource/amenity-ui/node_modules/.pnpm/@umijs+renderer-react@4.1.6_ef5jwxihqo6n7gxfmzogljlgcm/node_modules/@umijs/renderer-react';
 import { getRoutes } from './core/route';
 import { createPluginManager } from './core/plugin';

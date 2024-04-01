@@ -3,7 +3,7 @@
 // DO NOT CHANGE IT MANUALLY!
 import nprogress from '/Users/xiaozisong/Desktop/opensource/amenity-ui/node_modules/.pnpm/nprogress@0.2.0/node_modules/nprogress';
 import './nprogress.css';
-import UserLoading from '/Users/xiaozisong/Desktop/opensource/amenity-ui/node_modules/.pnpm/dumi@2.3.0-beta.8_glxuhseaxnynb3wl34vdbiopru/node_modules/dumi/dist/client/pages/Loading';
+import UserLoading from '/Users/xiaozisong/Desktop/opensource/amenity-ui/node_modules/.pnpm/dumi@2.3.0-beta.8_borxkdqnsj666zm5xafhs5jqdq/node_modules/dumi/dist/client/pages/Loading';
 import React, { useLayoutEffect, type FC } from 'react';
 import { useSiteData } from 'dumi';
 

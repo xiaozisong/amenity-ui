@@ -3,8 +3,8 @@
 // DO NOT CHANGE IT MANUALLY!
 import { history } from 'dumi';
 import React, { useState, useLayoutEffect, useCallback, type ReactNode } from 'react';
-import { RawIntlProvider, createIntl, createIntlCache } from '/Users/xiaozisong/Desktop/opensource/amenity-ui/node_modules/.pnpm/react-intl@6.6.4_react@18.2.0/node_modules/react-intl';
-import { useIsomorphicLayoutEffect } from '/Users/xiaozisong/Desktop/opensource/amenity-ui/node_modules/.pnpm/dumi@2.3.0-beta.8_glxuhseaxnynb3wl34vdbiopru/node_modules/dumi/dist/client/theme-api/utils.js'
+import { RawIntlProvider, createIntl, createIntlCache } from '/Users/xiaozisong/Desktop/opensource/amenity-ui/node_modules/.pnpm/react-intl@6.6.4_cxb65ekrtd6awtninm5rhvstfy/node_modules/react-intl';
+import { useIsomorphicLayoutEffect } from '/Users/xiaozisong/Desktop/opensource/amenity-ui/node_modules/.pnpm/dumi@2.3.0-beta.8_borxkdqnsj666zm5xafhs5jqdq/node_modules/dumi/dist/client/theme-api/utils.js'
 import { locales, messages } from './config';
 
 const cache = createIntlCache();
