@@ -2,6 +2,7 @@ import React, { Suspense } from 'react';
 import { Button, ConfigProvider, Flex, Typography } from 'antd';
 import { createStyles } from 'antd-style';
 import { Link, useLocation } from 'dumi';
+import * as utils from '../../../../theme/utils'
 
 import useLocale from '../../../../hooks/useLocale';
 import { GroupMask } from '../Group';
@@ -108,7 +109,7 @@ const PreviewBanner: React.FC<React.PropsWithChildren> = (props) => {
   const [locale] = useLocale(locales);
   const { styles } = useStyle();
   const { pathname, search } = useLocation();
-
+  const isZhCN = utils.isZhCN(pathname);
   return (
     <GroupMask>
       {/* Image Left Top */}
@@ -137,12 +138,12 @@ const PreviewBanner: React.FC<React.PropsWithChildren> = (props) => {
           <p>{locale.slogan}</p>
         </Typography>
         <Flex gap="middle" className={styles.btnWrap}>
-          <Link to={`/components/overview/'cn'${search}`}>
+          <Link to={utils.getLocalizedPathname('/components/overview/', true, search)}>
             <Button size="large" type="primary">
               {locale.start}
             </Button>
           </Link>
-          <Link to={`/docs/spec/introduce/${search}`}>
+          <Link to={utils.getLocalizedPathname('/docs/spec/introduce/', true, search)}>
             <Button size="large">{locale.designLanguage}</Button>
           </Link>
         </Flex>
