@@ -5,6 +5,8 @@ import useLocation from "../../../hooks/useLocation";
 import classNames from "classnames";
 import Header from "../../slots/Header";
 import IndexLayout from "../IndexLayout";
+import ResourceLayout from "../ResourceLayout";
+import SidebarLayout from "../SidebarLayout";
 
 const locales = {
   cn: {
@@ -41,7 +43,7 @@ const DocLayout: React.FC = () => {
     // if (pathname.startsWith('/theme-editor')) {
     //   return outlet;
     // }
-    // return <SidebarLayout>{outlet}</SidebarLayout>;
+    return <SidebarLayout>{outlet}</SidebarLayout>;
   }, [pathname, outlet]);
 
   return <>

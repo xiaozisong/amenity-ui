@@ -1,8 +1,8 @@
 import React from "react"
 
-const Content = () => {
+const Content: React.FC<React.PropsWithChildren> = ({ children }) => {
   return <div>
-    content
+    {children}
   </div>
 }
 
