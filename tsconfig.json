@@ -3,10 +3,10 @@
     "baseUrl": "./",
     "paths": {
       "@@/*": [".dumi/tmp/*"],
-      "antd": ["components/index.ts"],
-      "antd/es/*": ["components/*"],
-      "antd/lib/*": ["components/*"],
-      "antd/locale/*": ["components/locale/*"]
+      // "antd": ["components/index.ts"],
+      // "antd/es/*": ["components/*"],
+      // "antd/lib/*": ["components/*"],
+      // "antd/locale/*": ["components/locale/*"]
     },
     "strictNullChecks": true,
     "module": "esnext",

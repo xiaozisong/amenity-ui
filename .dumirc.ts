@@ -34,7 +34,7 @@ export default defineConfig({
     // 'antd/lib': path.join(__dirname, 'components'),
     // 'antd/es': path.join(__dirname, 'components'),
     // 'antd/locale': path.join(__dirname, 'components/locale'),
-    // antd: path.join(__dirname, 'components'),
+    // antd: path.join(__dirname, 'node_modules/antd'),
     // https://github.com/ant-design/ant-design/issues/46628
     '@ant-design/icons$': '@ant-design/icons/lib',
   },
