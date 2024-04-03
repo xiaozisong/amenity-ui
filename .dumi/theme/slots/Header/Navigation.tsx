@@ -194,37 +194,20 @@ export default ({
     },
     {
       label: (
-        <Link to={utils.getLocalizedPathname('/docs/react/introduce', isZhCN, search)}>
-          {locale.development}
-        </Link>
-      ),
-      key: 'docs/react',
-    },
-    {
-      label: (
         <Link to={utils.getLocalizedPathname('/components/overview/', isZhCN, search)}>
           {locale.components}
         </Link>
       ),
       key: 'components',
     },
-    blogList.length
-      ? {
-          label: (
-            <Link
-              to={utils.getLocalizedPathname(
-                blogList.sort((a, b) => (a.frontmatter?.date > b.frontmatter?.date ? -1 : 1))[0]
-                  .link,
-                isZhCN,
-                search,
-              )}
-            >
-              {locale.blog}
-            </Link>
-          ),
-          key: 'docs/blog',
-        }
-      : null,
+    {
+      label: (
+        <a href='https://xiaozisong.github.io' target='_blank'>
+          {locale.blog}
+        </a>
+      ),
+      key: 'docs/blog',
+    },
     {
       label: (
         <Link to={utils.getLocalizedPathname('/docs/resources', isZhCN, search)}>
@@ -233,50 +216,6 @@ export default ({
       ),
       key: 'docs/resources',
     },
-    isZhCN
-      ? {
-          label: (
-            <a href="https://ant-design.antgroup.com" target="_blank" rel="noreferrer">
-              国内镜像
-            </a>
-          ),
-          key: 'mirror',
-          children: [
-            {
-              label: (
-                <a href="https://ant-design.antgroup.com" target="_blank" rel="noreferrer">
-                  官方镜像
-                </a>
-              ),
-              icon: (
-                <img
-                  alt="logo"
-                  src="https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg"
-                  width={16}
-                  style={{ verticalAlign: 'text-bottom' }}
-                />
-              ),
-              key: 'antgroup',
-            },
-            {
-              label: (
-                <a href="https://ant-design.gitee.io" target="_blank" rel="noreferrer">
-                  Gitee 镜像
-                </a>
-              ),
-              icon: (
-                <img
-                  alt="gitee"
-                  src="https://gw.alipayobjects.com/zos/bmw-prod/9e91e124-9bab-4113-b500-301412f6b370.svg"
-                  width={16}
-                  style={{ verticalAlign: 'text-bottom' }}
-                />
-              ),
-              key: 'gitee',
-            },
-          ],
-        }
-      : null,
     ...(additional ?? []),
   ];
 

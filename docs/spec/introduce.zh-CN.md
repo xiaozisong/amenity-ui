@@ -1,6 +1,6 @@
 ---
 group:
-  title: Ant Design
+  title: AMENITY - UI
   order: 0
 order: 0
 title: 介绍
