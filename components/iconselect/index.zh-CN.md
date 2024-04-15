@@ -12,3 +12,7 @@ group:
 ---
 
 这是Icon选择器
+
+## 图标列表
+
+<IconSelect></IconSelect>
