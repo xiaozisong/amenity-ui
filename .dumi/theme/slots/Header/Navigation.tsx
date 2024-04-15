@@ -29,80 +29,9 @@ const locales = {
 
 // ============================= Style =============================
 const useStyle = createStyles(({ token }) => {
-  const { antCls, iconCls, fontFamily, headerHeight, menuItemBorder, colorPrimary, colorText } =
-    token;
 
   return {
-    nav: css`
-      height: 100%;
-      font-size: 14px;
-      font-family: Avenir, ${fontFamily}, sans-serif;
-      border: 0;
 
-      &${antCls}-menu-horizontal {
-        border-bottom: none;
-
-        & > ${antCls}-menu-item, & > ${antCls}-menu-submenu {
-          min-width: ${40 + 12 * 2}px;
-          height: ${headerHeight}px;
-          padding-right: 12px;
-          padding-left: 12px;
-          line-height: ${headerHeight}px;
-
-          &::after {
-            top: 0;
-            right: 12px;
-            bottom: auto;
-            left: 12px;
-            border-width: ${menuItemBorder}px;
-          }
-
-          a {
-            color: ${colorText};
-          }
-
-          a:before {
-            position: absolute;
-            inset: 0;
-            background-color: transparent;
-            content: "";
-          }
-        }
-
-        & ${antCls}-menu-submenu-title ${iconCls} {
-          margin: 0;
-        }
-
-        & > ${antCls}-menu-item-selected {
-          a {
-            color: ${colorPrimary};
-          }
-        }
-      }
-
-      & > ${antCls}-menu-item, & > ${antCls}-menu-submenu {
-        text-align: center;
-      }
-    `,
-    popoverMenuNav: css`
-      ${antCls}-menu-item,
-      ${antCls}-menu-submenu {
-        text-align: left;
-      }
-
-      ${antCls}-menu-item-group-title {
-        padding-left: 24px;
-      }
-
-      ${antCls}-menu-item-group-list {
-        padding: 0 16px;
-      }
-
-      ${antCls}-menu-item,
-      a {
-        color: #333;
-      }
-    `,
   };
 });
 
@@ -223,7 +152,6 @@ export default ({
     <Menu
       mode={menuMode}
       selectedKeys={[activeMenuItem]}
-      className={styles.nav}
       disabledOverflow
       items={items}
       style={{ borderRight: 0 }}
