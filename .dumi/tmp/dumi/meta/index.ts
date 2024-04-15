@@ -11,8 +11,10 @@ import { frontmatter as fm4, toc as t4 } from '/Users/xiaozisong/Desktop/opensou
 import { demoIndex as dmi4 } from '/Users/xiaozisong/Desktop/opensource/amenity-ui/docs/spec/test.md?type=demo-index';
 import { frontmatter as fm5, toc as t5 } from '/Users/xiaozisong/Desktop/opensource/amenity-ui/components/button/index.zh-CN.md?type=frontmatter';
 import { demoIndex as dmi5 } from '/Users/xiaozisong/Desktop/opensource/amenity-ui/components/button/index.zh-CN.md?type=demo-index';
-import { frontmatter as fm6, toc as t6 } from '/Users/xiaozisong/Desktop/opensource/amenity-ui/components/overview/index.zh-CN.md?type=frontmatter';
-import { demoIndex as dmi6 } from '/Users/xiaozisong/Desktop/opensource/amenity-ui/components/overview/index.zh-CN.md?type=demo-index';
+import { frontmatter as fm6, toc as t6 } from '/Users/xiaozisong/Desktop/opensource/amenity-ui/components/iconselect/index.zh-CN.md?type=frontmatter';
+import { demoIndex as dmi6 } from '/Users/xiaozisong/Desktop/opensource/amenity-ui/components/iconselect/index.zh-CN.md?type=demo-index';
+import { frontmatter as fm7, toc as t7 } from '/Users/xiaozisong/Desktop/opensource/amenity-ui/components/overview/index.zh-CN.md?type=frontmatter';
+import { demoIndex as dmi7 } from '/Users/xiaozisong/Desktop/opensource/amenity-ui/components/overview/index.zh-CN.md?type=demo-index';
 
 export const filesMeta = {
   'index-cn/index': {
@@ -47,10 +49,16 @@ export const filesMeta = {
     demoIndex: dmi5,
     textGetter: () => import(/* webpackChunkName: "meta__components__zh-CN" */'/Users/xiaozisong/Desktop/opensource/amenity-ui/components/button/index.zh-CN.md?type=text'),
   },
-  'components/overview/index.zh-CN': {
+  'components/iconselect/index.zh-CN': {
     frontmatter: fm6,
     toc: t6,
     demoIndex: dmi6,
+    textGetter: () => import(/* webpackChunkName: "meta__components__zh-CN" */'/Users/xiaozisong/Desktop/opensource/amenity-ui/components/iconselect/index.zh-CN.md?type=text'),
+  },
+  'components/overview/index.zh-CN': {
+    frontmatter: fm7,
+    toc: t7,
+    demoIndex: dmi7,
     textGetter: () => import(/* webpackChunkName: "meta__components__zh-CN" */'/Users/xiaozisong/Desktop/opensource/amenity-ui/components/overview/index.zh-CN.md?type=text'),
   },
 }

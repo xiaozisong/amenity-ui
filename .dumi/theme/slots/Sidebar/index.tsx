@@ -5,7 +5,6 @@ import { useSidebarData } from 'dumi';
 import MobileMenu from 'rc-drawer';
 
 import useMenu from '../../../hooks/useMenu';
-import SiteContext from '../SiteContext';
 
 const useStyle = createStyles(({ token, css }) => {
   const { antCls, fontFamily, colorSplit } = token;
