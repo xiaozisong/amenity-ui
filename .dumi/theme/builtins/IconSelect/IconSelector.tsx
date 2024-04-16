@@ -2,6 +2,7 @@ import * as React from 'react';
 import { Empty, Select } from 'antd';
 import { createStyles } from 'antd-style';
 import icon from './icon';
+
 export interface IconType {
   icon_id: string;
   name: string;
@@ -20,13 +21,15 @@ const useStyle = createStyles(({ css }) => {
     li: css`
       list-style-type: none;
       text-align: center;
-      height: 80px;
+      height: 60px;
       line-height: 30px;
       cursor: pointer;
       padding: 10px 0 0 0;
       &:hover {
        background: #1677ff;
        color: white;
+       transition: all 0.3s;
+       border-radius: 3px;
       }
     `,
     iconName: css`
@@ -58,9 +61,40 @@ const useStyle = createStyles(({ css }) => {
   }
 });
 
+const defaultList = [
+  {
+    icon_id: '1',
+    name: 'java',
+    font_class: 'java',
+    unicode: '', 
+    unicode_decimal: 1,
+  },
+  {
+    icon_id: '2',
+    name: 'javascript',
+    font_class: 'javascript',
+    unicode: '', 
+    unicode_decimal: 1,
+  },
+  {
+    icon_id: '3',
+    name: '购物车',
+    font_class: 'shoppingcart',
+    unicode: '', 
+    unicode_decimal: 1,
+  },
+  {
+    icon_id: '3',
+    name: 'python',
+    font_class: 'python',
+    unicode: '', 
+    unicode_decimal: 1,
+  }
+]
+
 const SelectIcon: React.FC<SelectIconProps> = ({
-  scriptUrl = '//at.alicdn.com/t/font_8d5l8fzk5b87iudi.js',
-  iconList = [],
+  scriptUrl = '//at.alicdn.com/t/font_1788044_0dwu4guekcwr.js',
+  iconList = defaultList,
   ...restProps
 }) => {
 
@@ -111,7 +145,7 @@ const SelectIcon: React.FC<SelectIconProps> = ({
     <>
       <Select
         style={{
-          width: '40%'
+          width: '45%'
         }}
         showSearch
         placeholder='请选择icon'
