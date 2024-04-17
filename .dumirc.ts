@@ -37,6 +37,7 @@ export default defineConfig({
     // antd: path.join(__dirname, 'node_modules/antd'),
     // https://github.com/ant-design/ant-design/issues/46628
     '@ant-design/icons$': '@ant-design/icons/lib',
+    // 'amenity': path.join(__dirname, 'components'),
   },
   extraRehypePlugins: [rehypeAntd],
   extraRemarkPlugins: [remarkAntd],
