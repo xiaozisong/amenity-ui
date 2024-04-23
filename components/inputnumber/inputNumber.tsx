@@ -9,6 +9,7 @@ import StepHandler from './stepHandler';
 import classname from 'classnames';
 import type { InputAttributes, NumericFormatProps, NumberFormatValues, SourceInfo } from 'react-number-format/types';
 import type { SizeType } from 'antd/lib/config-provider/SizeContext';
+import useToken from 'antd/es/theme/useToken';
 
 type Omits = 'value' | 'onChange' | 'isAllowed' | 'defaultValue' | 'prefix' | 'size' | 'suffix' | 'type' | 'onChange' | 'allowClear';
 
@@ -55,7 +56,7 @@ const InputNumber = forwardRef((props: InputNumberProps, ref: any) => {
   } = props;
   const inputRef = useRef<any>({});
   const [value, setValue] = useState<number | undefined>(defaultValue || propsValue);
-  const { hashId }: any = useThemeToken();
+  const { hashId }: any = useToken();
   const { styles } = useStyles();
   const precision = useMemo(() => {
     const step_percision = ('' + step).split('.')[1]?.length || 0;
